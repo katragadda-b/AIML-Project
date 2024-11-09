@@ -14,7 +14,7 @@ SPOTIPY_CLIENT_ID = 'your_spotify_client_id'
 SPOTIPY_CLIENT_SECRET = 'your_spotify_client_secret' #you can get these on spotify developer platform
 SPOTIPY_REDIRECT_URI = "http://localhost:8888/callback"
 
-scope = "playlist-modify-public user-library-read"
+scope = "playlist-modify-public user-library-read user-read-recently-played"
 auth_manager = SpotifyOAuth(client_id=SPOTIPY_CLIENT_ID, client_secret=SPOTIPY_CLIENT_SECRET, redirect_uri=SPOTIPY_REDIRECT_URI, scope=scope)
 sp = spotipy.Spotify(auth_manager=auth_manager)
 
